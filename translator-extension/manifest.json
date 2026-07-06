@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Page Translator",
+    "description": "Automatically translates visible web page text into your preferred language.",
+    "version": "1.0.0",
+    "permissions": [
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "options_page": "options.html",
+    "action": {
+        "default_title": "Auto Page Translator",
+        "default_popup": "popup.html"
+    }
+}
