@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>Auto Page Translator 设置</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <h1>自动网页翻译设置</h1>
+    <label><input id="enabled" type="checkbox"> 启用自动翻译</label>
+    <label>源语言
+      <input id="sourceLanguage" placeholder="auto">
+    </label>
+    <label>目标语言
+      <input id="targetLanguage" placeholder="zh">
+    </label>
+    <label>翻译接口地址
+      <input id="endpoint" placeholder="https://libretranslate.com/translate">
+    </label>
+    <button id="save">保存设置</button>
+    <p id="status" role="status"></p>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>
